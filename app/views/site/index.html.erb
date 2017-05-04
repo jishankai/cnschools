@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://ceshi.kanwokanwo.com/niit -->
+<html lang="en" class=" js no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>南京工业职业技术学院 | 看我看我</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" type="text/css" href="./niit_files/public.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/frame.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/jquery-rebox.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/video-js.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/school.css">
+</head>
+<body class="china">
+<style type="text/css">
+    .line {
+        margin-bottom: 20px;
+    }
+
+    /* 复制提示 */
+    .copy-tips {
+        position: fixed;
+        z-index: 99999;
+        bottom: 50%;
+        left: 50%;
+        margin: 0 0 -20px -80px;
+        background-color: rgba(0, 0, 0, 0.2);
+        filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000, endColorstr=#30000000);
+        padding: 6px;
+    }
+
+    .copy-tips-wrap {
+        padding: 10px 20px;
+        text-align: center;
+        border: 1px solid #F4D9A6;
+        background-color: #FFFDEE;
+        font-size: 14px;
+    }
+
+    .login_sf {
+        float: right;
+        position: relative;
+        margin-top: 2%;
+    }
+
+    .icon_wb {
+        background: url(/images/wbqq.png) no-repeat left top;
+        width: 53px;
+        height: 54px;
+    }
+
+    .icon_qq {
+        background: url(/images/wbqq.png) no-repeat -73px top;
+        width: 53px;
+        height: 54px;
+        margin-left: 20px;
+    }
+
+    .icon_weixin {
+        background: url(/images/wbqq.png) no-repeat right top;
+        width: 53px;
+        height: 54px;
+        margin-left: 20px;
+    }
+
+    .login_sf a {
+        display: inline-block;
+    }
+
+    .login_title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1%;
+        font-size: 16px;
+    }
+
+    /*新版菜单栏 2016.4.25*/
+    .show-for-large-menu a {
+        display: inline-block;
+        width: 130px;
+        height: 75px;
+        line-height: 25px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .show-for-large-menu a:hover, .show-for-large-menu a.active {
+        border-bottom: 2px solid #1bb38c;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .navbar-brand {
+            /*margin-right: 140px;*/
+        }
+    }
+
+    .show-for-small-menu {
+        display: none;
+    }
+    .show-for-large-menu{
+        display: inline-block;      /*原因是导航栏右侧主页按钮布局错位*/
+        /*display: block;*/
+    }
+
+    /*959宽隐藏student和school显示三道杠 large-menu隐藏 small-menu显示*/
+    @media (max-width: 959px) {
+        .not-login {
+            display: none;
+        }
+
+        .nav-center {
+            display: block !important;
+        }
+
+        .show-for-large-menu {
+            display: none;
+        }
+
+        /*.show-for-small-menu {*/
+        /*float: right;*/
+        /*display: block;*/
+        /*width: 80px;*/
+        /*max-width:959px;*/
+        /*height: 100%;*/
+        /*position: relative;*/
+        /*background: #1bb38c;*/
+        /*text-align: center;*/
+        /*}*/
+
+        .show-for-small-menu {
+            width: 100%;
+            max-width:959px;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+            background: #1bb38c;
+            text-align: center;
+            display: none;
+        }
+
+        .click-dropdown a {
+            display: inline-block;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .click-show {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            display: none;
+        }
+
+        .click-show a {
+            display: block;
+            width: 130px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            background: #2f312e;
+        }
+
+        .click-show a.active {
+            background: #1bb38c;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        .navbar-search-input {
+            width: 130px !important;
+        }
+
+        .show-for-large-menu a {
+            width: 90px;
+        }
+        .navbar-section > li{
+            width: 106px;
+        }
+
+    }
+
+    @media screen and (max-width: 1100px) {
+        .show-for-large-menu a {
+            width: 80px;
+            font-size: 13px;
+        }
+        .navbar-section > li{
+            width: 110px;
+        }
+        .navbar-section > li span{
+            font-size: 13px;
+        }
+
+    }
+
+    @media (max-width: 1089px) {
+        .navbar-search-input {
+            width: 70px !important;
+            font-size: 12px;
+        }
+        .navbar-section > li{
+            width: 100px
+        }
+        .navbar-section > li span{
+            font-size: 12px;
+        }
+    }
+
+    @media ( max-width: 593px) {
+        .navbar-search-input {
+            width: 130px !important;
+        }
+    }
+
+    @media ( max-width: 539px) {
+        .navbar-search-input {
+            width: 100px !important;
+        }
+    }
+
+    @media ( max-width: 520px) {
+        .navbar-search-input {
+            width: 56px !important;
+        }
+        .navbar-section li{
+            width:60px;
+        }
+        .subnav-avatar-down{
+            width:90px;
+        }
+
+    }
+
+    @media ( max-width: 400px) {
+        .navbar-search-input {
+            width: 22px !important;
+        }
+        .nav-center{
+            margin-left: 10px;
+        }
+        .navbar-section{
+            margin-right: 10px;
+        }
+        .navbar-section li{
+            width:40px;
+        }
+        .subnav-avatar-down{
+            width:90px;
+        }
+    }
+
+    @media ( max-width: 330px) {
+        .navbar-search-input {
+            width: 8px !important;
+        }
+        .navbar-brand {
+            margin-right: 0px;
+        }
+    }
+
+    select#adregisterSchoolCountry {
+        width: 50%;
+        height: 40px;
+    }
+   /* 清除导航文字下划线*/
+    .show-for-large-menu a{
+        text-decoration: none;
+    }
+</style>
+<div class="md-overlay"></div>
+
+<script src="./niit_files/jquery-2.2.1.min.js"></script>
+<script src="./niit_files/jquery.zclip.js"></script>
+<script src="./niit_files/modalEffects_jquery.js"></script>
+<script src="./niit_files/underscore-min.js"></script>
+<script type="text/javascript" src="./niit_files/jquery.jcshare.js"></script>
+<script type="text/javascript" src="./niit_files/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="./niit_files/top.js"></script>
+<script>
+   /* $(function () {
+        $(window).resize(function(){
+            var clintW=$(window).width()；
+            if(clintW<1650){
+                $('.nav-center').css('marginLeft','2px');
+                $('.navbar ul').css('marginRight','2px');
+            }else {
+                $('.nav-center').css('marginLeft','50px');
+                $('.navbar ul').css('marginRight','50px');
+            }
+        })
+    })*/
+ /*解决高亮显示bug*/
+   function addLine(pageText,firstpage,pageId) {
+       var URLText=window.location.href;
+       if(URLText.indexOf(pageText)>-1) {
+           $(firstpage).css("border-bottom", "none");
+           $(pageId).css("border-bottom", "2px solid #1bb38c");
+           $(firstpage).hover(function () {
+               $(firstpage).css("border-bottom", "2px solid #1bb38c");
+           }, function () {
+               $(firstpage).css("border-bottom", "none");
+           })
+       }
+   }
+   addLine("specialization","#student-Page","#slist");
+   addLine("userItem","#student-Page","#slist");
+   addLine("myReservation","#student-Page","#slist");
+   addLine("profile","#student-Page","#partners");
+
+</script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="<%= root_path %>">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class='active' style="float:left">
+          <a style="color:white" href="<%= root_path %>">中文</a>
+        </li>
+      <li class='' style="float:left">
+          <a style="color:white" href="<%= root_path %>?localize=en">英文</a>
+        </li>
+      <li class='' style="float:left">
+          <a style="color:white;display:inline" href="<%= root_path %>">泰文</a>
+        </li>
+      <li class='' style="float:left">
+          <a style="color:white;display:inline" href="<%= root_path %>">马来西亚文</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container-fluid main clearfix">
+  <div class="bg_pic">
+    <div class="black_box"></div>
+    <img src="./img/10.jpeg" data-modal="modal-schoolbgimg">
+    <div id="schoolNameAndRank">
+      <div class="school-avatar" id="myAvatarParent">
+        <img src="./niit_files/niitlogo5726075657775997.png@1e_1c_0o_0l_200h_200w_80q.src" id="avatarSrc">
+      </div>
+      <a href="javascript:;" class="school_name">南京工业职业技术学院</a>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-lg-3 sidebar">
+      <div id="biography" class="introduce cu-no">
+        <ul>
+          <li><strong>学校地址</strong><span>南京市栖霞区仙林大学城羊山北路1号</span></li>
+          <li><strong>学校网址</strong><span>
+              <a class="biography-a" target="_blank" href="http://niit.edu.cn/"><em>http://niit.edu.cn/</em></a>
+          </span></li>
+          <li><strong>联系电话</strong><span>+86-25-85864052</span></li>
+          <li><strong>电子邮箱</strong><span>
+              <a class="biography-a" href="mailto:lisa@niit.edu.cn"><em>lisa@niit.edu.cn</em></a>
+          </span></li>
+          <li><strong>学校类型</strong><span>专科，本科</span></li>
+          <li><strong>所在城市</strong><span>南京市</span></li>
+          <li><strong>建校时间</strong><span>1918</span></li>
+          <li><strong>新生人数</strong><span>1100</span></li>
+          <li><strong>校园面积</strong><span>1360</span></li>
+          <li><strong>班级大小</strong><span>20</span></li>
+          <li><strong>师资简介</strong><span>硕、博士学位比例达76.5%</span></li>
+          <li><strong>师生比例</strong><span>1:20</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-9  main_content">
+      <ul class="navbar_is">
+        <li class="school_btn tab-show" id="school_btn" style="width:100%">
+          <a href="files/南京工业职业技术学院外籍学生申请表20170504.pdf" id="school_word">点击申请</a>
+        </li>
+      </ul>
+      <div id="informationPage" class="information_page" style="display: none;">
+        <div class="view-information-page-form clearfix" style="width: 100%;margin-left: 10%;margin-top: 10%;"></div>
+        <ul class="information_record" id="informationList">
+
+        </ul>
+
+      </div>
+      <!-- myschool -->
+      <div id="infomationSchoolPage" class="school_page hide" style="display: block;">
+        <div class="content-container col-lg-9 col-md-9 col-xs-12">
+          <div class="my-story-container">
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>学校视频</h1>
+                </div>
+                <section class="col-xs-12">
+                  <center>南工院简介</center>
+                  <div class="media-item flex-video myVideoMedia text-center">
+
+                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
+                      <source src="./videos/1.flv" type="video/x-flv">
+                    </video>
+                  </div>
+
+                </section>
+                <section class="col-xs-12">
+                  <center>国际教育</center>
+                  <div class="media-item flex-video myVideoMedia text-center">
+
+                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
+                      <source src="./videos/2.flv" type="video/x-flv">
+                    </video>
+                  </div>
+
+                </section>
+                <section class="col-xs-12">
+                  <center>招生宣传</center>
+
+                  <div class="media-item flex-video myVideoMedia text-center">
+
+                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
+                      <source src="./videos/3.flv" type="video/x-flv">
+                    </video>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>学校特色</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>
+                              学校前身是中国近现代民主革命家、社会活动家、教育家黄炎培先生于1918年在上海创办的中华职业学校，该校是中国教育史上第一所以“职业”冠名的职业教育学校。学校培养了包括张闻天、华罗庚、邹韬奋、江竹筠、顾心怿、朱森林、秦怡、徐伯昕、王世绩等杰出校友在内的十几万名建设和管理人才。<br><br>
+                              <img class="img-responsive" src="img/3.jpg"><br>
+                              学院设有机械工程学院、电气工程学院、航空工程学院、交通工程学院、计算机与软件学院、经济管理学院、商务贸易学院、艺术设计学院、国际教育学院、公共基础课部、社会科学部、体育部、工程技术实训中心等9院3部1中心。<br><br>
+                              设有17个专业群，51个专业。包括国家级职业教育专业教学资源库项目2个、国家示范性高等职业院校重点专业、教育部教改试点专业等32个；获批“十三五”产教融合发展工程规划项目1个、江苏省高职教育产教深度融合实训平台项目2个，建有包括3个国家级高职教育实训基地在内各类学生实验实训室近200个。<br><br>
+                              <img class="img-responsive" src="img/4.jpg"><br>
+                              南京工业职业技术学院将“双创”精神融入校园文化，以传承创新“敬业乐群”校训文化为主导，以建设优良校风为抓手，逐步形成体现历史传承、时代特征和学校特色的校园文化建设新格局。<br><br>
+                              2016年12月，，英国国家创新创业教育中心（NCEE）首席双创教育课程开发专家Alison Price、Lisa McMullan一行来我校进行双创师资教学法及双创课程开发培训（第一期）。通过培训课程的学习，教师们进一步了解了创新创业课程教什么、如何教，以及如何评价学生学习成果；通过创新创业概念，掌握创业教育核心内容，通过不同教学活动实现来实现对学生创新创业能力的培养。
+                              <br><br>
+                              <img class="img-responsive" src="img/5.jpg"><br>
+
+                        </p></div></div>
+                    </div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>国际合作</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>南京工业职业技术学院现与英国、加拿大等院校合作开设8个中外合作办学专业（机械制造与自动化、应用电子技术、电气自动化技术、计算机应用、商务信息技术、国际商务、旅游与酒店管理、影视动画）。<br><br>
+                              还与美国、加拿大等国大学合作开设5个海外本科直通车专业（机械制造及自动化、电气自动化技术、商务英语、机电一体化技术、计算机多媒体技术）。<br><br>
+                              学院所有中外合作办学项目均已通过教育部的备案审核，是全国高职院校中国际合作办学专业设置较多、规模较大、服务学生较好的院校之一。<br><br>
+                              <img class="img-responsive" src="img/11.png"><br>
+                        </p></div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>学校荣誉</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>根据2016年10月学校官网显示，学校被评为“全国五四红旗团委”、“全国高职高专院校创新教育基地”、“全国高校学生科技创业实习基地”、“2011全国职业院校魅力校园”、“2012/2013年度江苏省高等学校和谐校园”、“2011江苏省平安校园”等荣誉，并获得“全国高职院校心理健康教育工作先进集体”、“江苏省高职院校思想政治教育研究工作先进单位”、“2012年江苏省高校创先争优先进集体”、“2012年江苏省高校先进基层党组织”、“江苏省首批国防教育示范校”、“江苏省青年文明号”、“江苏省文明公寓”、“江苏省学生军训工作先进单位”等专项表彰，多次获得“江苏高校党建工作创新奖”、“江苏省学生教育管理工作创新奖”。<br><br>
+                              <img class="img-responsive" src="img/1.png"><br>
+                        </p></div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>特色课程</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description">
+                            <div class="text-center">重点专业</div>
+                            <p>
+部级教改试点专业：<br>
+◇ 机电一体化技术专业<br>
+◇ 电气工程及自动化专业<br>
+◇ 数控加工技术专业<br>
+◇ 汽车检测与维修技术专业<br>
+<br>
+省级品牌（特色）专业<br>
+◇ 机电一体化技术专业<br>
+◇ 电气自动化技术专业<br>
+◇ 楼宇智能化工程技术专业<br>
+◇ 信息与网络技术专业<br>
+◇ 商务英语专业<br>
+◇ 应用电子技术专业<br>
+◇ 国际贸易实务专业<br>
+◇ 数控技术专业<br>
+<br>
+院级品牌专业（含建设点）<br>
+◇ 市场营销专业<br>
+◇ 生产过程自动化技术专业<br>
+◇ 现代照明技术专业<br>
+◇ 通信技术专业<br>
+◇ 电子信息工程技术专业<br>
+◇ 旅游管理专业<br>
+◇ 物流管理专业<br>
+◇ 会计专业<br>
+◇ 房地产经营与估价专业<br>
+◇ 汽车检测与维修技术专业<br>
+◇ 机械制造与自动化专业<br>
+◇ 模具设计与制造专业<br>
+◇ 软件技术专业<br>
+◇ 计算机多媒体技术专业<br>
+◇ 环境艺术设计专业<br>
+◇ 动漫设计与制作专业<br>
+◇ 视觉传达设计专业<br>
+<br></p>
+<div class="text-center">精品课程</div>
+<p>
+国家精品课程：<br>
+◇ 《电气技术基础》<br>
+◇ 《机械设计基础》<br>
+<br>
+省级精品课程：<br>
+◇ 《高等数学》<br>
+◇ 《外贸单证实务》<br>
+◇ 《自动机与自动线》<br>
+<br>
+院级精品课程（含建设点）<br>
+◇ 《单片机应用技术》<br>
+◇ 《基础会计学》<br>
+◇ 《大学语文》<br>
+◇ 《电气技术基础2》<br>
+◇ 《电控与PLC应用技术》<br>
+◇ 《弱电工程技术》<br>
+◇ 《电力电子与自动调速系统》<br>
+◇ 《电气技术基础1》<br>
+◇ 《电气绘图与电子CAD》<br>
+◇ 《电子产品制造工艺》<br>
+◇ 《高频电子技术》<br>
+◇ 《供配电技术》<br>
+◇ 《通信设备综合实训》<br>
+◇ 《楼宇智能化综合实训》<br>
+◇ 《热工基础》<br>
+◇ 《市场营销学》<br>
+◇ 《国际贸易实务》<br>
+◇ 《国际汇兑与结算》<br>
+◇ 《房地产开发与经营》<br>
+◇ 《配送与配送中心》<br>
+◇ 《建筑工程造价与控制》<br>
+◇ 《国际市场营销》<br>
+◇ 《机械制造技术》<br>
+◇ 《数控编程与操作》<br>
+◇ 《液压与气压传动》<br>
+◇ 《机械制造基础》<br>
+◇ 《机械制图与计算机绘图》<br>
+◇ 《C++程序设计》<br>
+◇ 《计算机应用基础》<br>
+◇ 《数据结构》<br>
+◇ 《软件工程》<br>
+◇ 《SQL Server 网络数据库》<br><br>
+                        </p></div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<link rel="stylesheet" type="text/css" href="./niit_files/bottom.css">
+<footer class="clearfix">
+  <div class="row">
+    <div class="col-md-12">
+      <span>
+        看我看我，看遍中国 <br>
+        <br>
+        © 2017.看我看我<br>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="./niit_files/video.js"></script>
+<script src="./niit_files/jquery.scrollTo.js"></script>
+<script src="./niit_files/modernizr.custom.js"></script>
+<script src="./niit_files/jquery.ajaxfileupload.js"></script>
+<script src="./niit_files/xss.js"></script>
+<script src="./niit_files/jquery-rebox.js"></script>
+<script src="./niit_files/backbone-min.js"></script>
+<script src="./niit_files/backbone.marionette.min.js"></script>
+<script src="./niit_files/jquery-ui.min.js"></script>
+<script src="./niit_files/jquery.sortable.js"></script>
+<script src="./niit_files/video-popup.js"></script><div class="popup_video_div"><div class="popup-vertical-center"><div class="popup-horizontal-center"><div id="video-obj" class="video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 100%; height: 100%;"><video class="vjs-tech" id="video-obj_html5_api" preload="none" poster="" data-setup="{}"><source src="" type="video/mp4"></video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time </span>0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time </span>-0:00</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress"><span class="vjs-control-text">Loaded: 0%</span></div><div class="vjs-play-progress" style="width: 0%;"><span class="vjs-control-text">Progress: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off" style="left: 0%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level" style="width: 100%;"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle" style="left: 100%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span></div><div class="vjs-menu"><ul class="vjs-menu-content"></ul><li class="vjs-menu-title">Chapters</li></div></div></div></div><button class="md-close"><i class="glyphicon glyphicon-remove"></i></button></div></div></div>
+<script src="./niit_files/splitpageNew2.js"></script>
+
+<script type="text/javascript" src="./niit_files/school-viewprofile.js"></script>
+<script src="./niit_files/school.js"></script>
+<script src="./niit_files/school.view.js"></script>
+
+
+</body></html>

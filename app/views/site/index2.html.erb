@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://ceshi.kanwokanwo.com/niit -->
+<html lang="en" class=" js no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Nanjing Vocational Institute of Industry Technology | KanwoKanwo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" type="text/css" href="./niit_files/public.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/frame.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/jquery-rebox.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/video-js.css">
+    <link rel="stylesheet" type="text/css" href="./niit_files/school.css">
+</head>
+<body class="china">
+<style type="text/css">
+    .line {
+        margin-bottom: 20px;
+    }
+
+    /* 复制提示 */
+    .copy-tips {
+        position: fixed;
+        z-index: 99999;
+        bottom: 50%;
+        left: 50%;
+        margin: 0 0 -20px -80px;
+        background-color: rgba(0, 0, 0, 0.2);
+        filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#30000000, endColorstr=#30000000);
+        padding: 6px;
+    }
+
+    .copy-tips-wrap {
+        padding: 10px 20px;
+        text-align: center;
+        border: 1px solid #F4D9A6;
+        background-color: #FFFDEE;
+        font-size: 14px;
+    }
+
+    .login_sf {
+        float: right;
+        position: relative;
+        margin-top: 2%;
+    }
+
+    .icon_wb {
+        background: url(/images/wbqq.png) no-repeat left top;
+        width: 53px;
+        height: 54px;
+    }
+
+    .icon_qq {
+        background: url(/images/wbqq.png) no-repeat -73px top;
+        width: 53px;
+        height: 54px;
+        margin-left: 20px;
+    }
+
+    .icon_weixin {
+        background: url(/images/wbqq.png) no-repeat right top;
+        width: 53px;
+        height: 54px;
+        margin-left: 20px;
+    }
+
+    .login_sf a {
+        display: inline-block;
+    }
+
+    .login_title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1%;
+        font-size: 16px;
+    }
+
+    /*新版菜单栏 2016.4.25*/
+    .show-for-large-menu a {
+        display: inline-block;
+        width: 130px;
+        height: 75px;
+        line-height: 25px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .show-for-large-menu a:hover, .show-for-large-menu a.active {
+        border-bottom: 2px solid #1bb38c;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .navbar-brand {
+            /*margin-right: 140px;*/
+        }
+    }
+
+    .show-for-small-menu {
+        display: none;
+    }
+    .show-for-large-menu{
+        display: inline-block;      /*原因是导航栏右侧主页按钮布局错位*/
+        /*display: block;*/
+    }
+
+    /*959宽隐藏student和school显示三道杠 large-menu隐藏 small-menu显示*/
+    @media (max-width: 959px) {
+        .not-login {
+            display: none;
+        }
+
+        .nav-center {
+            display: block !important;
+        }
+
+        .show-for-large-menu {
+            display: none;
+        }
+
+        /*.show-for-small-menu {*/
+        /*float: right;*/
+        /*display: block;*/
+        /*width: 80px;*/
+        /*max-width:959px;*/
+        /*height: 100%;*/
+        /*position: relative;*/
+        /*background: #1bb38c;*/
+        /*text-align: center;*/
+        /*}*/
+
+        .show-for-small-menu {
+            width: 100%;
+            max-width:959px;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+            background: #1bb38c;
+            text-align: center;
+            display: none;
+        }
+
+        .click-dropdown a {
+            display: inline-block;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .click-show {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            display: none;
+        }
+
+        .click-show a {
+            display: block;
+            width: 130px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            background: #2f312e;
+        }
+
+        .click-show a.active {
+            background: #1bb38c;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        .navbar-search-input {
+            width: 130px !important;
+        }
+
+        .show-for-large-menu a {
+            width: 90px;
+        }
+        .navbar-section > li{
+            width: 106px;
+        }
+
+    }
+
+    @media screen and (max-width: 1100px) {
+        .show-for-large-menu a {
+            width: 80px;
+            font-size: 13px;
+        }
+        .navbar-section > li{
+            width: 110px;
+        }
+        .navbar-section > li span{
+            font-size: 13px;
+        }
+
+    }
+
+    @media (max-width: 1089px) {
+        .navbar-search-input {
+            width: 70px !important;
+            font-size: 12px;
+        }
+        .navbar-section > li{
+            width: 100px
+        }
+        .navbar-section > li span{
+            font-size: 12px;
+        }
+    }
+
+    @media ( max-width: 593px) {
+        .navbar-search-input {
+            width: 130px !important;
+        }
+    }
+
+    @media ( max-width: 539px) {
+        .navbar-search-input {
+            width: 100px !important;
+        }
+    }
+
+    @media ( max-width: 520px) {
+        .navbar-search-input {
+            width: 56px !important;
+        }
+        .navbar-section li{
+            width:60px;
+        }
+        .subnav-avatar-down{
+            width:90px;
+        }
+
+    }
+
+    @media ( max-width: 400px) {
+        .navbar-search-input {
+            width: 22px !important;
+        }
+        .nav-center{
+            margin-left: 10px;
+        }
+        .navbar-section{
+            margin-right: 10px;
+        }
+        .navbar-section li{
+            width:40px;
+        }
+        .subnav-avatar-down{
+            width:90px;
+        }
+    }
+
+    @media ( max-width: 330px) {
+        .navbar-search-input {
+            width: 8px !important;
+        }
+        .navbar-brand {
+            margin-right: 0px;
+        }
+    }
+
+    select#adregisterSchoolCountry {
+        width: 50%;
+        height: 40px;
+    }
+   /* 清除导航文字下划线*/
+    .show-for-large-menu a{
+        text-decoration: none;
+    }
+</style>
+<div class="md-overlay"></div>
+
+<script src="./niit_files/jquery-2.2.1.min.js"></script>
+<script src="./niit_files/jquery.zclip.js"></script>
+<script src="./niit_files/modalEffects_jquery.js"></script>
+<script src="./niit_files/underscore-min.js"></script>
+<script type="text/javascript" src="./niit_files/jquery.jcshare.js"></script>
+<script type="text/javascript" src="./niit_files/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="./niit_files/top.js"></script>
+<script>
+   /* $(function () {
+        $(window).resize(function(){
+            var clintW=$(window).width()；
+            if(clintW<1650){
+                $('.nav-center').css('marginLeft','2px');
+                $('.navbar ul').css('marginRight','2px');
+            }else {
+                $('.nav-center').css('marginLeft','50px');
+                $('.navbar ul').css('marginRight','50px');
+            }
+        })
+    })*/
+ /*解决高亮显示bug*/
+   function addLine(pageText,firstpage,pageId) {
+       var URLText=window.location.href;
+       if(URLText.indexOf(pageText)>-1) {
+           $(firstpage).css("border-bottom", "none");
+           $(pageId).css("border-bottom", "2px solid #1bb38c");
+           $(firstpage).hover(function () {
+               $(firstpage).css("border-bottom", "2px solid #1bb38c");
+           }, function () {
+               $(firstpage).css("border-bottom", "none");
+           })
+       }
+   }
+   addLine("specialization","#student-Page","#slist");
+   addLine("userItem","#student-Page","#slist");
+   addLine("myReservation","#student-Page","#slist");
+   addLine("profile","#student-Page","#partners");
+
+</script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="<%= root_path %>">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class='active' style="float:left">
+          <a style="color:white" href="<%= root_path %>">Chinese</a>
+        </li>
+      <li class='' style="float:left">
+          <a style="color:white" href="<%= root_path %>?localize=en">English</a>
+        </li>
+      <li class='' style="float:left">
+          <a style="color:white;display:inline" href="<%= root_path %>">Thai</a>
+        </li>
+      <li class='' style="float:left">
+          <a style="color:white;display:inline" href="<%= root_path %>">Malaysia</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container-fluid main clearfix">
+  <div class="bg_pic">
+    <div class="black_box"></div>
+    <img src="./img/10.jpeg" data-modal="modal-schoolbgimg">
+    <div id="schoolNameAndRank">
+      <div class="school-avatar" id="myAvatarParent">
+        <img src="./niit_files/niitlogo5726075657775997.png@1e_1c_0o_0l_200h_200w_80q.src" id="avatarSrc">
+      </div>
+      <a href="javascript:;" class="school_name">Nanjing Vocational Institute of Industry Technology</a>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-lg-3 sidebar">
+      <div id="biography" class="introduce cu-no">
+        <ul>
+          <li><strong>Address</strong><span>南京市栖霞区仙林大学城羊山北路1号</span></li>
+          <li><strong>HomePage</strong><span>
+              <a class="biography-a" target="_blank" href="http://niit.edu.cn/"><em>http://niit.edu.cn/</em></a>
+          </span></li>
+          <li><strong>Telephone</strong><span>+86-25-85864052</span></li>
+          <li><strong>Email</strong><span>
+              <a class="biography-a" href="mailto:lisa@niit.edu.cn"><em>lisa@niit.edu.cn</em></a>
+          </span></li>
+          <li><strong>School Type</strong><span>专科，本科</span></li>
+          <li><strong>City</strong><span>南京市</span></li>
+          <li><strong>Since</strong><span>1918</span></li>
+          <li><strong>Freshman</strong><span>1100</span></li>
+          <li><strong>Area</strong><span>1360</span></li>
+          <li><strong>Students/Class</strong><span>20</span></li>
+          <li><strong>Techers</strong><span>硕、博士学位比例达76.5%</span></li>
+          <li><strong>Techers:Students</strong><span>1:20</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-9  main_content">
+      <ul class="navbar_is">
+        <li class="school_btn tab-show" id="school_btn" style="width:100%">
+          <a href="files/南京工业职业技术学院外籍学生申请表20170504.pdf" id="school_word">APPLY</a>
+        </li>
+      </ul>
+      <div id="informationPage" class="information_page" style="display: none;">
+        <div class="view-information-page-form clearfix" style="width: 100%;margin-left: 10%;margin-top: 10%;"></div>
+        <ul class="information_record" id="informationList">
+
+        </ul>
+
+      </div>
+      <!-- myschool -->
+      <div id="infomationSchoolPage" class="school_page hide" style="display: block;">
+        <div class="content-container col-lg-9 col-md-9 col-xs-12">
+          <div class="my-story-container">
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>VIDEOS</h1>
+                </div>
+                <section class="col-xs-12">
+                  <center>Introduction</center>
+                  <div class="media-item flex-video myVideoMedia text-center">
+
+                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
+                      <source src="./videos/1.flv" type="video/x-flv">
+                    </video>
+                  </div>
+
+                </section>
+                <section class="col-xs-12">
+                  <center>International Education</center>
+                  <div class="media-item flex-video myVideoMedia text-center">
+
+                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
+                      <source src="./videos/2.flv" type="video/x-flv">
+                    </video>
+                  </div>
+
+                </section>
+                <section class="col-xs-12">
+                  <center>Recruit</center>
+
+                  <div class="media-item flex-video myVideoMedia text-center">
+
+                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
+                      <source src="./videos/3.flv" type="video/x-flv">
+                    </video>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>FEATURES</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>
+                              Nanjing Vocation Institute of Industry Technology (hereinafter referred to as “NIIT”) was founded in 1918, the predecessor of which is ChungHua Vocational School founded in Shanghai by Mr. Huang Yanpei, a famous modern Chinese educator. <br><br>It is the first “vocational” school so named in Chinese history of modern education. Our alumni include Wentian Zhang, Luogeng Hua, Taofen Zou, Zhuyun Jiang, Xinyi Gu, Senlin Zhu, Yi Qin, Boxin Xu, Shiji Wang and thousands and hundreds of experts in construction and management.<br><br>
+                              <img class="img-responsive" src="img/6.png"><br>
+Nanjing Vocation Institute of Industry Technology is a vibrant community which include nine schools, three department and one center: School of Mechanical Engineering, School of Electrical Engineering, School of Aeronautical Engineering, School of Transport Engineering, School of Computer and Software Science, School of Economics and Management, School of Commerce and Trade, School of Art and Design, School of International Education, Department of Public Basic Courses, Department of Social Sciences, Department of Physical Education, and the Engineering Techniques Training Center.<br><br>
+                              <img class="img-responsive" src="img/7.jpg"><br>
+                              NIIT is currently offering students seventeen specialty groups and fifty-one programs. Among these offerings, two are national vocational and professional education resource database projects, thirty-two are either National Key Vocational and Professional Education programs for Demonstration or Ministry of Education Education Reform pilot programs. <br><br>
+                              Moreover, NIIT has received approval for one 13th Five Year Plan Integrative Development and Planning program and two Jiangsu Province Integrative Development and Technique Training for Higher Education programs. We have also built almost two-hundred technique training labs which include three national professional and vocational training base for higher education.<br><br>
+                              <img class="img-responsive" src="img/8.jpg"><br>
+                              NIIT has integrated the innovative and entrepreneurial spirit into its campus culture which is represented by the school motto of NIIT “respect your work as well as your workmates”. We concentrate on creating great school spirits and establishing a new pattern which cherishes time-honored traditions, cutting-edge technology and school-specific cultures.  <br><br>
+                              <img class="img-responsive" src="img/9.jpg"><br>
+                              In December 2016, Alison Price and Lisa McMullan, chief developers for the innovative and entrepreneurial program at Entrepreneurship in Education (NCEE) visited NIIT and held the first pedagogy and curriculum development workshop. <br><br>
+                              The workshop helped our teaching fellows further understand the what and how of Innovative and Entrepreneurial programs as well as its evaluation methods. They now have a new vision regarding how to cultivate a sense of innovation and entrepreneurship in students through the teaching in different settings of innovative and entrepreneurial concepts and the core knowledge of entrepreneurial education.<br><br>
+                              <img class="img-responsive" src="img/10.jpg"><br>
+
+                        </p></div></div>
+                    </div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>International Cooperation</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>NIIT is currently cooperating with British and Canadian universities over eight on-campus programs which include Mechanical Manufacture and Automation, Applied Electronics Technology, Applied Computer Science, Business Information Technology, International Commerce, Tourism and Hotel Management, Film and Animation. <br><br>
+                              We are also working with universities in the US and Canada on five study-abroad undergraduate programs which include Mechanical Manufacture and Automation,  Electrical Automation Technology, Business English, Electro-mechanical Integration Technology, and Multimedia Technology. <br><br>
+                              All programs mentioned above have received approval from the Ministry of Education and NIIT has already become one of the most active Chinese higher-ed institutions in terms of international cooperation.<br><br>
+                              <img class="img-responsive" src="img/12.jpg"><br>
+                              <img class="img-responsive" src="img/13.jpg"><br>
+                        </p></div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>HONORS</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>According to the content showed in Oct. 2016’s campus website, NIPT was awarded as “May Fourth Red-banner Youth League of Nation”, “Nationwide Innovative Educational Base of Vocational Colleges”, ”Nationwide Technology Entrepreneurship Training Base of College Students”, “Nationwide Most Attractive Vocational College in 2011”, “Most Harmonious Campus in Jiangsu Prov.”, “Safest Campus in Jiangsu in 2011”, and etc. And NIPT was rated as “Nationwide Advanced Collective of Psychological Health Education”, “Advanced Collective of Political Thought Education & Research in Jiangsu Prov.”, “Advanced Basic-level Party Organization of Jiangsu Prov.”, “First Bath in Jiangsu Prov. of National Defense Education”, “Youth Civilization Unit of Jiangsu Prov.”, “Civilized Apartment in Jiangsu Prov.” and etc.<br><br>
+                              <img class="img-responsive" src="img/2.jpg"><br>
+                        </p></div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>MAJORS and COURSES</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description">
+                            <div class="text-center">KEY MAJORS</div>
+                            <p>
+Ministry-level Education Reform Pilot Specialty:<br>
+◇ Mechanical and Electrical Integration Technology<br>
+◇ Electrical Engineering and Automation<br>
+◇ Numerical Control Machining Technology<br>
+◇ Vehicle Inspection and Maintenance<br>
+ <br>
+
+Province-level Brand Specialty :<br>
+◇ Mechanical and Electrical Integration Technology<br>
+◇ Electrical Automation Technology<br>
+◇ Building Intellectual Technology<br>
+◇ Information and Network Technology<br>
+◇ Business English<br>
+◇ Applied Electronic Technology<br>
+◇ International Trade Practice<br>
+◇ Numerical Control Technology<br>
+ <br>
+College-level Brand Specialty (key specialty included):<br>
+◇ Marketing<br>
+◇ Manufacturing Process Automation<br>
+◇ Modern Illumination Technology<br>
+◇ Telecommunication Technology<br>
+◇ Electronic Information Engineering Technology<br>
+◇ Tourism Management<br>
+◇ Logistics Management<br>
+◇ Accountancy<br>
+◇ Real Estate Operation and Evaluation<br>
+◇ Vehicle Inspection and Maintenance<br>
+◇ Machine Manufacturing and Automation<br>
+◇ Mold Design and Manufacturing<br>
+◇ Software Technology<br>
+◇ Computer Multimedia Technology<br>
+◇ Environmental Art and Design<br>
+◇ Animation Design and Production<br>
+◇ Visual Communication Design<br>
+<br></p>
+<div class="text-center">KEY COURSES</div>
+<p>
+   National level Fey Courses:<br>
+◇ Fundamental of Electrical Technology<br>
+◇ Fundamental of Machine Design<br>
+ <br>
+
+Province-level Key Courses:<br>
+◇ Advanced Mathematics<br>
+◇ Documents Business of Foreign Trade<br>
+◇ Automatic Machine and Automatic Line<br>
+ <br>
+
+
+College-level Key Courses:<br>
+◇ The Application Technology of Single-chip<br>
+◇ Fundamental of Accounting<br>
+◇ College Chinese Language and Literature<br>
+◇ Fundamental of Electrical Technology II<br>
+◇ Electronic Control and the Application Technology of PLC<br>
+◇ Weak Current Engineering Technology<br>
+◇ Power Electronics and Automatic Speed Regulating System<br>
+◇ Fundamental of Electrical Technology I<br>
+◇ Electronic Drawing and CAD<br>
+◇ Electronic Products Manufacturing Process<br>
+◇ High-frequency Electronic Technology<br>
+◇ Power Supply and Distribution Technology<br>
+◇ Practice on Communication Devices<br>
+◇ Building Intellectual Technology<br>
+◇ Fundamental of Thermal Technology<br>
+◇ Marketing<br>
+◇ International Trade Practice        <br>
+◇ International Exchange and Settlements<br>
+◇ Real Estate Operation and Evaluation<br>
+◇ Distribution and Distribution Center<br>
+◇ Construction Project Cost and Control<br>
+◇ International Marketing<br>
+◇ Mechanical Manufacturing Technology<br>
+◇ Numerical Control Programming and Operation<br>
+◇ Hydraulic and Pneumatic Transmission<br>
+◇ Fundamental of Machine Manufacturing<br>
+◇ Mechanical Drawing and Computer Drawing<br>
+◇ C++ Programming<br>
+◇ The Application Foundation of Computer Science<br>
+◇ Data Structure<br>
+◇ Software Engineering<br>
+◇ SOL Server Network Database<br>
+</p></div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<link rel="stylesheet" type="text/css" href="./niit_files/bottom.css">
+<footer class="clearfix">
+  <div class="row">
+    <div class="col-md-12">
+      <span>
+        See U in China <br>
+        <br>
+        © 2017.KanwoKanwo<br>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="./niit_files/video.js"></script>
+<script src="./niit_files/jquery.scrollTo.js"></script>
+<script src="./niit_files/modernizr.custom.js"></script>
+<script src="./niit_files/jquery.ajaxfileupload.js"></script>
+<script src="./niit_files/xss.js"></script>
+<script src="./niit_files/jquery-rebox.js"></script>
+<script src="./niit_files/backbone-min.js"></script>
+<script src="./niit_files/backbone.marionette.min.js"></script>
+<script src="./niit_files/jquery-ui.min.js"></script>
+<script src="./niit_files/jquery.sortable.js"></script>
+<script src="./niit_files/video-popup.js"></script><div class="popup_video_div"><div class="popup-vertical-center"><div class="popup-horizontal-center"><div id="video-obj" class="video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 100%; height: 100%;"><video class="vjs-tech" id="video-obj_html5_api" preload="none" poster="" data-setup="{}"><source src="" type="video/mp4"></video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time </span>0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time </span>-0:00</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress"><span class="vjs-control-text">Loaded: 0%</span></div><div class="vjs-play-progress" style="width: 0%;"><span class="vjs-control-text">Progress: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off" style="left: 0%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level" style="width: 100%;"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle" style="left: 100%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span></div><div class="vjs-menu"><ul class="vjs-menu-content"></ul><li class="vjs-menu-title">Chapters</li></div></div></div></div><button class="md-close"><i class="glyphicon glyphicon-remove"></i></button></div></div></div>
+<script src="./niit_files/splitpageNew2.js"></script>
+
+<script type="text/javascript" src="./niit_files/school-viewprofile.js"></script>
+<script src="./niit_files/school.js"></script>
+<script src="./niit_files/school.view.js"></script>
+
+
+</body></html>
