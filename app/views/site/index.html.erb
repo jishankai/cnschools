@@ -324,15 +324,18 @@
       <ul class="nav navbar-nav navbar-right">
         <li class='active' style="float:left">
           <a style="color:white" href="<%= root_path %>">中文</a>
+          <span style="color:white"> |</span>
         </li>
       <li class='' style="float:left">
           <a style="color:white" href="<%= root_path %>?localize=en">英文</a>
+          <span style="color:white"> |</span>
         </li>
       <li class='' style="float:left">
-          <a style="color:white;display:inline" href="<%= root_path %>">泰文</a>
+          <a style="color:white;display:inline" href="<%= root_path %>">印尼文</a>
+          <span style="color:white"> |</span>
         </li>
       <li class='' style="float:left">
-          <a style="color:white;display:inline" href="<%= root_path %>">马来西亚文</a>
+          <a style="color:white;display:inline" href="<%= root_path %>">马来文</a>
         </li>
       </ul>
     </div>
@@ -354,11 +357,12 @@
     <div class="col-lg-3 sidebar">
       <div id="biography" class="introduce cu-no">
         <ul>
+          <li><strong>学校排名</strong><span>全国高职学院TOP4</span></li>
           <li><strong>学校地址</strong><span>南京市栖霞区仙林大学城羊山北路1号</span></li>
           <li><strong>学校网址</strong><span>
               <a class="biography-a" target="_blank" href="http://niit.edu.cn/"><em>http://niit.edu.cn/</em></a>
           </span></li>
-          <li><strong>联系电话</strong><span>+86-25-85864052</span></li>
+          <li><strong>联系电话</strong><span>400-080-1151</span></li>
           <li><strong>电子邮箱</strong><span>
               <a class="biography-a" href="mailto:lisa@niit.edu.cn"><em>isa@niit.edu.cn</em></a>
           </span></li>
@@ -370,6 +374,8 @@
           <li><strong>班级大小</strong><span>20</span></li>
           <li><strong>师资简介</strong><span>硕、博士学位比例达76.5%</span></li>
           <li><strong>师生比例</strong><span>1:20</span></li>
+          <li><strong>学费</strong><span>8000元</span></li>
+          <li><strong>住宿费</strong><span>2000元</span></li>
         </ul>
       </div>
     </div>
@@ -396,34 +402,40 @@
                   <h1>学校视频</h1>
                 </div>
                 <section class="col-xs-12">
-                  <center>南工院简介</center>
+                  <p class="text-center">NIIT南工院简介</p>
+                  <center><img class="img-responsive" src="img/niit_en_logo.png"><br></center>
+                  <center><img class="img-responsive" src="img/ncee_logo.jpg"><br></center>
+                  <p>欢迎收看历史悠久的百所名高职-----南京工业职业技术学院(简称：南工院，NIIT)简介，学校由黄炎培先生创办，采取双证教育，教学与就业相融合。</p>
+                  <center>百所名高职--南京工业职业技术学院简介</center>
                   <div class="media-item flex-video myVideoMedia text-center">
 
-                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
-                      <source src="./videos/1.flv" type="video/x-flv">
+                    <video class="video-js vjs-default-skin" controls="" preload="/img/video_1.png" data-setup="{}">
+                      <source src="./videos/1.mp4" type="video/mp4">
                     </video>
                   </div>
-
                 </section>
                 <section class="col-xs-12">
-                  <center>国际教育</center>
+                  <p class="text-center">国际教育</p>
+                  <p>NIIT国际教育学院是全国高职院校中，国际合作办学专业设置最多，规模最大的院校之一，与英国威根荷莱学院、加拿大和美国等多校开展合作办学项目。</p>
+                  <center>南京工业职业技术学院国际教育学院宣传片</center>
                   <div class="media-item flex-video myVideoMedia text-center">
 
-                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
-                      <source src="./videos/2.flv" type="video/x-flv">
+                    <video class="video-js vjs-default-skin" controls="" preload="/img/video_2.png" data-setup="{}">
+                      <source src="./videos/2.mp4" type="video/mp4">
                     </video>
                   </div>
-
                 </section>
                 <section class="col-xs-12">
-                  <center>招生宣传</center>
-
+                  <p class="text-center">提前招生宣传</p>
+                  <p>NIIT分为三个校区，其中仙林校区接受国际学生前来就读，副高以上职称比例达42.6%，硕、博士学位比例达76.5%，提前招生专业不乏教育部教改试点专业，毕业生就业率保持在99%......</p>
+                  <center>南京工业职业技术学院2017年提前招生宣传视频</center>
                   <div class="media-item flex-video myVideoMedia text-center">
 
-                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
-                      <source src="./videos/3.flv" type="video/x-flv">
+                    <video class="video-js vjs-default-skin" controls="" preload="/img/video_3.png" data-setup="{}">
+                      <source src="./videos/3.mp4" type="video/mp4">
                     </video>
                   </div>
+
                 </section>
               </div>
             </div>
@@ -439,14 +451,14 @@
                     <div class="description"><div>
                         <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>
                               学校前身是中国近现代民主革命家、社会活动家、教育家黄炎培先生于1918年在上海创办的中华职业学校，该校是中国教育史上第一所以“职业”冠名的职业教育学校。学校培养了包括张闻天、华罗庚、邹韬奋、江竹筠、顾心怿、朱森林、秦怡、徐伯昕、王世绩等杰出校友在内的十几万名建设和管理人才。<br><br>
-                              <img class="img-responsive" src="img/3.jpg"><br>
+                              <img class="img-responsive" src="img/c1.png"><br>
                               学院设有机械工程学院、电气工程学院、航空工程学院、交通工程学院、计算机与软件学院、经济管理学院、商务贸易学院、艺术设计学院、国际教育学院、公共基础课部、社会科学部、体育部、工程技术实训中心等9院3部1中心。<br><br>
                               设有17个专业群，51个专业。包括国家级职业教育专业教学资源库项目2个、国家示范性高等职业院校重点专业、教育部教改试点专业等32个；获批“十三五”产教融合发展工程规划项目1个、江苏省高职教育产教深度融合实训平台项目2个，建有包括3个国家级高职教育实训基地在内各类学生实验实训室近200个。<br><br>
-                              <img class="img-responsive" src="img/4.jpg"><br>
+                              <img class="img-responsive" src="img/15.png"><br>
                               南京工业职业技术学院将“双创”精神融入校园文化，以传承创新“敬业乐群”校训文化为主导，以建设优良校风为抓手，逐步形成体现历史传承、时代特征和学校特色的校园文化建设新格局。<br><br>
-                              2016年12月，，英国国家创新创业教育中心（NCEE）首席双创教育课程开发专家Alison Price、Lisa McMullan一行来我校进行双创师资教学法及双创课程开发培训（第一期）。通过培训课程的学习，教师们进一步了解了创新创业课程教什么、如何教，以及如何评价学生学习成果；通过创新创业概念，掌握创业教育核心内容，通过不同教学活动实现来实现对学生创新创业能力的培养。
+                              2016年12月，英国国家创新创业教育中心（NCEE）首席双创教育课程开发专家Alison Price、Lisa McMullan一行来我校进行双创师资教学法及双创课程开发培训（第一期）。通过培训课程的学习，教师们进一步了解了创新创业课程教什么、如何教，以及如何评价学生学习成果；通过创新创业概念，掌握创业教育核心内容，通过不同教学活动实现来实现对学生创新创业能力的培养。
                               <br><br>
-                              <img class="img-responsive" src="img/5.jpg"><br>
+                              <img class="img-responsive" src="img/13.jpg"><br>
 
                         </p></div></div>
                     </div></div>
@@ -593,6 +605,33 @@
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>报名申请</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>
+                              <img class="img-responsive" src="img/niitapplication.png"><br>
+                            </p>
+      <ul class="navbar_is">
+        <li class="school_btn tab-show" id="school_btn" style="width:100%">
+          <a href="files/南京工业职业技术学院外籍学生申请表20170504.pdf" id="school_word">点击申请</a>
+        </li>
+      </ul>
+
+                        </div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

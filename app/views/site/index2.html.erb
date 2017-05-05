@@ -324,15 +324,18 @@
       <ul class="nav navbar-nav navbar-right">
         <li class='active' style="float:left">
           <a style="color:white" href="<%= root_path %>">Chinese</a>
+          <span style="color:white"> |</span>
         </li>
       <li class='' style="float:left">
           <a style="color:white" href="<%= root_path %>?localize=en">English</a>
-        </li>
+          <span style="color:white"> |</span>
+      </li>
       <li class='' style="float:left">
-          <a style="color:white;display:inline" href="<%= root_path %>">Thai</a>
-        </li>
+          <a style="color:white;display:inline" href="<%= root_path %>">Indonesian</a>
+          <span style="color:white"> |</span>
+      </li>
       <li class='' style="float:left">
-          <a style="color:white;display:inline" href="<%= root_path %>">Malaysia</a>
+          <a style="color:white;display:inline" href="<%= root_path %>">Malaysian</a>
         </li>
       </ul>
     </div>
@@ -345,7 +348,7 @@
     <img src="./img/10.jpeg" data-modal="modal-schoolbgimg">
     <div id="schoolNameAndRank">
       <div class="school-avatar" id="myAvatarParent">
-        <img src="./niit_files/niitlogo5726075657775997.png@1e_1c_0o_0l_200h_200w_80q.src" id="avatarSrc">
+        <img src="./img/logo_en.png" id="avatarSrc">
       </div>
       <a href="javascript:;" class="school_name">Nanjing Vocational Institute of Industry Technology</a>
     </div>
@@ -354,22 +357,25 @@
     <div class="col-lg-3 sidebar">
       <div id="biography" class="introduce cu-no">
         <ul>
+          <li><strong>Rank</strong><span>National Higher Vocational College Ranking 4th</span></li>
           <li><strong>Address</strong><span>1 North Yangshan Road,Qixia District,Nanjing,Jiangsu Province,210023</span></li>
           <li><strong>HomePage</strong><span>
-              <a class="biography-a" target="_blank" href="http://niit.edu.cn/"><em>http://english.niit.edu.cn/</em></a>
+              <a class="biography-a" target="_blank" href="http://english.niit.edu.cn/"><em>http://english.niit.edu.cn/</em></a>
           </span></li>
-          <li><strong>Telephone</strong><span>+86-25-85864052</span></li>
+          <li><strong>Telephone</strong><span>(+86)400-080-1151</span></li>
           <li><strong>Email</strong><span>
               <a class="biography-a" href="mailto:lisa@niit.edu.cn"><em>isa@niit.edu.cn</em></a>
           </span></li>
           <li><strong>School Type</strong><span>Associate's Degree/Bachelor's Degree</span></li>
-          <li><strong>City</strong><span>Nanjing</span></li>
-          <li><strong>Since</strong><span>1918</span></li>
-          <li><strong>Freshman</strong><span>1100</span></li>
-          <li><strong>Area</strong><span>224 Acres</span></li>
-          <li><strong>Students/Class</strong><span>20</span></li>
-          <li><strong>Techers</strong><span>Master degree or above: 76.5%</span></li>
-          <li><strong>Techers:Students</strong><span>1:20</span></li>
+          <li><strong>Location</strong><span>Nanjing, Jiangsu</span></li>
+          <li><strong>Established</strong><span>1918</span></li>
+          <li><strong>Undergraduates</strong><span>1100</span></li>
+          <li><strong>Campus</strong><span>224 Acres</span></li>
+          <li><strong>Average Class Size</strong><span>20</span></li>
+          <li><strong>Faculty: </strong><span>Master degree or above: 76.5%</span></li>
+          <li><strong>Student-Faculty Ratio</strong><span>20:1</span></li>
+          <li><strong>Tution and Fees</strong><span>8000RMB</span></li>
+          <li><strong>Room and Board</strong><span>2000RMB</span></li>
         </ul>
       </div>
     </div>
@@ -396,32 +402,34 @@
                   <h1>VIDEOS</h1>
                 </div>
                 <section class="col-xs-12">
-                  <center>Introduction</center>
+                  <p class="text-center">Introduction</p>
+                  <center><img class="img-responsive" src="img/niit_en_logo.png"><br></center>
+                  <center><img class="img-responsive" src="img/ncee_logo.jpg"><br></center>
                   <div class="media-item flex-video myVideoMedia text-center">
 
-                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
-                      <source src="./videos/1.flv" type="video/x-flv">
+                    <video class="video-js vjs-default-skin" controls="" preload="/img/video_1.png" data-setup="{}">
+                      <source src="./videos/1.mp4" type="video/mp4">
                     </video>
                   </div>
 
                 </section>
                 <section class="col-xs-12">
-                  <center>International Education</center>
+                  <p class="text-center">International Education</p>
                   <div class="media-item flex-video myVideoMedia text-center">
 
-                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
-                      <source src="./videos/2.flv" type="video/x-flv">
+                    <video class="video-js vjs-default-skin" controls="" preload="/img/video_2.png" data-setup="{}">
+                      <source src="./videos/2.mp4" type="video/mp4">
                     </video>
                   </div>
 
                 </section>
                 <section class="col-xs-12">
-                  <center>Recruit</center>
+                  <p class="text-center">Recruit</p>
 
                   <div class="media-item flex-video myVideoMedia text-center">
 
-                    <video class="video-js vjs-default-skin" controls="" preload="none" data-setup="{}">
-                      <source src="./videos/3.flv" type="video/x-flv">
+                    <video class="video-js vjs-default-skin" controls="" preload="/img/video_3.png" data-setup="{}">
+                      <source src="./videos/3.mp4" type="video/mp4">
                     </video>
                   </div>
                 </section>
@@ -444,12 +452,12 @@ Nanjing Vocation Institute of Industry Technology is a vibrant community which i
                               <img class="img-responsive" src="img/7.jpg"><br>
                               NIIT is currently offering students seventeen specialty groups and fifty-one programs. Among these offerings, two are national vocational and professional education resource database projects, thirty-two are either National Key Vocational and Professional Education programs for Demonstration or Ministry of Education Education Reform pilot programs. <br><br>
                               Moreover, NIIT has received approval for one 13th Five Year Plan Integrative Development and Planning program and two Jiangsu Province Integrative Development and Technique Training for Higher Education programs. We have also built almost two-hundred technique training labs which include three national professional and vocational training base for higher education.<br><br>
-                              <img class="img-responsive" src="img/8.jpg"><br>
+                              <img class="img-responsive" src="img/e3.jpg"><br>
                               NIIT has integrated the innovative and entrepreneurial spirit into its campus culture which is represented by the school motto of NIIT “respect your work as well as your workmates”. We concentrate on creating great school spirits and establishing a new pattern which cherishes time-honored traditions, cutting-edge technology and school-specific cultures.  <br><br>
-                              <img class="img-responsive" src="img/9.jpg"><br>
+                              <img class="img-responsive" src="img/e4.jpg"><br>
                               In December 2016, Alison Price and Lisa McMullan, chief developers for the innovative and entrepreneurial program at Entrepreneurship in Education (NCEE) visited NIIT and held the first pedagogy and curriculum development workshop. <br><br>
                               The workshop helped our teaching fellows further understand the what and how of Innovative and Entrepreneurial programs as well as its evaluation methods. They now have a new vision regarding how to cultivate a sense of innovation and entrepreneurship in students through the teaching in different settings of innovative and entrepreneurial concepts and the core knowledge of entrepreneurial education.<br><br>
-                              <img class="img-responsive" src="img/10.jpg"><br>
+                              <img class="img-responsive" src="img/ncee_logo.jpg"><br>
 
                         </p></div></div>
                     </div></div>
@@ -470,8 +478,8 @@ Nanjing Vocation Institute of Industry Technology is a vibrant community which i
                         <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>NIIT is currently cooperating with British and Canadian universities over eight on-campus programs which include Mechanical Manufacture and Automation, Applied Electronics Technology, Applied Computer Science, Business Information Technology, International Commerce, Tourism and Hotel Management, Film and Animation. <br><br>
                               We are also working with universities in the US and Canada on five study-abroad undergraduate programs which include Mechanical Manufacture and Automation,  Electrical Automation Technology, Business English, Electro-mechanical Integration Technology, and Multimedia Technology. <br><br>
                               All programs mentioned above have received approval from the Ministry of Education and NIIT has already become one of the most active Chinese higher-ed institutions in terms of international cooperation.<br><br>
-                              <img class="img-responsive" src="img/12.jpg"><br>
-                              <img class="img-responsive" src="img/13.jpg"><br>
+                              <img class="img-responsive" src="img/16.jpeg"><br>
+                              <img class="img-responsive" src="img/14.jpeg"><br>
                         </p></div></div>
                     </div></div>
 
@@ -490,7 +498,7 @@ Nanjing Vocation Institute of Industry Technology is a vibrant community which i
                   <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
                     <div class="description"><div>
                         <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>According to the content showed in Oct. 2016’s campus website, NIPT was awarded as “May Fourth Red-banner Youth League of Nation”, “Nationwide Innovative Educational Base of Vocational Colleges”, ”Nationwide Technology Entrepreneurship Training Base of College Students”, “Nationwide Most Attractive Vocational College in 2011”, “Most Harmonious Campus in Jiangsu Prov.”, “Safest Campus in Jiangsu in 2011”, and etc. And NIPT was rated as “Nationwide Advanced Collective of Psychological Health Education”, “Advanced Collective of Political Thought Education & Research in Jiangsu Prov.”, “Advanced Basic-level Party Organization of Jiangsu Prov.”, “First Bath in Jiangsu Prov. of National Defense Education”, “Youth Civilization Unit of Jiangsu Prov.”, “Civilized Apartment in Jiangsu Prov.” and etc.<br><br>
-                              <img class="img-responsive" src="img/2.jpg"><br>
+                              <img class="img-responsive" src="img/15.png"><br>
                         </p></div></div>
                     </div></div>
 
@@ -601,6 +609,33 @@ College-level Key Courses:<br>
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="clearfix">
+                <div class="col-lg-12 col-xs-12">
+                  <h1>APPLICATION</h1>
+                </div>
+              </div>
+              <div class="columns-info">
+                <div class="bg-gray">
+                  <div class="clearfix myschoolMedia media-item relative-position" data-module="MYSCHOOL">
+                    <div class="description"><div>
+                        <div class="col-lg-12 col-xs-12 disabled"><div class="media-item-description"><p>
+                              <img class="img-responsive" src="img/niitapplication.png"><br>
+                            </p>
+      <ul class="navbar_is">
+        <li class="school_btn tab-show" id="school_btn" style="width:100%">
+          <a href="files/南京工业职业技术学院外籍学生申请表20170504.pdf" id="school_word">APPLY</a>
+        </li>
+      </ul>
+
+                        </div></div>
+                    </div></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
